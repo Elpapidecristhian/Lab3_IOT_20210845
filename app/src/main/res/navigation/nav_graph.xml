@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/locationFragment">
+
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.lab3_iot.LocationFragment"
+        android:label="Búsqueda de Locaciones"
+        tools:layout="@layout/fragment_location">
+
+        <action
+            android:id="@+id/action_locationFragment_to_forecasterFragment"
+            app:destination="@id/forecasterFragment" />
+
+        <action
+            android:id="@+id/action_locationFragment_to_dateFragment"
+            app:destination="@id/dateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forecasterFragment"
+        android:name="com.example.lab3_iot.ForecasterFragment"
+        android:label="Pronósticos del Clima"
+        tools:layout="@layout/fragment_forecaster" />
+
+    <fragment
+        android:id="@+id/dateFragment"
+        android:name="com.example.lab3_iot.DateFragment"
+        android:label="Pronóstico Futuro"
+        tools:layout="@layout/fragment_date" />
+</navigation>

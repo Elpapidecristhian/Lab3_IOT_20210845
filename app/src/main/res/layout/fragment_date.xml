@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#7DD9F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Pronóstico por Fecha"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etCiudad"
+            android:hint="Ciudad o distrito"
+            android:background="@drawable/bg_edittext_rounded"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:hint="Fecha (YYYY-MM-DD)"
+            android:background="@drawable/bg_edittext_rounded"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnBuscarFecha"
+            android:text="Buscar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6C15BD"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDate"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>

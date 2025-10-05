@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+//Se utilizó chat gpt para el diseño de los cards que se utilizará en las 3 vistas de locaciones, forescast y date.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
