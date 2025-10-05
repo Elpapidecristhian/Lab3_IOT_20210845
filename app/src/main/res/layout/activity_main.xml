@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#7DD9F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Nombre de la aplicación -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:text="Tele-Weather"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0E0B73"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Imagen decorativa 1 -->
+    <ImageView
+        android:id="@+id/imgWeather1"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:src="@drawable/clima"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Imagen decorativa 2 -->
+    <ImageView
+        android:id="@+id/imgWeather2"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:src="@drawable/arcoriris"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botón Ingresar -->
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0E0B73"
+        android:text="Ingresar"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp" />
+
+    <!-- Texto de créditos -->
+    <TextView
+        android:id="@+id/tvCredits"
+        android:text="Elaborado por: Alejandro Emanuel Gutarra Bendezú / 20210845"
+        android:textColor="#0E0B73"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
